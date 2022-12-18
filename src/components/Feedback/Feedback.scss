@@ -1,0 +1,69 @@
+.feedback {
+  width: 50%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 15px;
+  padding-top: 20px;
+  gap: 5px;
+  .feedback-card {
+    padding-top: 20px;
+    .stars {
+      width: 102px;
+      height: auto;
+    }
+    .feedback-card-text {
+      width: auto;
+      padding: 16px 9px;
+      background: #f5f5f5;
+      border-radius: 24px;
+      font-size: 12px;
+      color: #111112;
+      height: 100px;
+      .feedback-author {
+        font-weight: 600;
+      }
+      .feedback-summary {
+        padding: 5px 0px;
+        line-height: 15px;
+        color: #adaeaf;
+        font-weight: 400;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1080px) and (max-width: 1439px) {
+  .feedback {
+    padding-left: 0px;
+    column-gap: 16px;
+    .stars {
+      width: 68px;
+    }
+    .feedback-card-text {
+      width: auto;
+      font-size: 11px;
+    }
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 450px) {
+  .feedback {
+    padding-top: 0px;
+    .feedback-card {
+      padding-top: 20px;
+      .stars {
+        width: 34px;
+        height: auto;
+      }
+      .feedback-card-text {
+        width: 91px;
+        padding: 6px 9px;
+        font-size: 4px;
+        height: 33px;
+        .feedback-summary {
+          padding: 0px;
+          line-height: 5px;
+        }
+      }
+    }
+  }
+}
